@@ -20,3 +20,32 @@ The EAR is calculated using the Euclidean distance between vertical and horizont
 
 Mouth Aspect Ratio (MAR)
 The MAR is computed as the ratio of the average vertical distance to the horizontal distance of the mouth landmarks. If the MAR exceeds a defined threshold, it indicates yawning, and the yawn count is incremented.
+
+Modules and Functions
+Libraries:
+
+dlib: For face detection and landmark prediction.
+scipy.spatial.distance: For calculating Euclidean distances.
+cv2: For capturing and processing video.
+imutils: For frame resizing and helper functions.
+Functions:
+
+eye_aspect_ratio(eye): Computes the EAR using the vertical and horizontal distances of eye landmarks.
+mouth_aspect_ratio(mou): Computes the MAR using the horizontal and average vertical distances of mouth landmarks.
+
+Constants
+EYE_AR_THRESH: Threshold for detecting closed eyes.
+EYE_AR_CONSEC_FRAMES: Number of consecutive frames needed to trigger a drowsiness alert.
+MOU_AR_THRESH: Threshold for detecting yawning.
+
+Outputs
+EAR and MAR Values:
+
+Displayed in real-time on the video feed.
+Visual Feedback:
+
+Eye and mouth contours are drawn.
+Alerts for drowsiness and yawning are displayed.
+Yawn Count:
+
+Displays the total number of yawns detected during the session.
