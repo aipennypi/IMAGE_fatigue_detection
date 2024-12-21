@@ -32,12 +32,15 @@ imutils: For frame resizing and helper functions.
 
 eye_aspect_ratio(eye): Computes the EAR using the vertical and horizontal distances of eye landmarks.
 mouth_aspect_ratio(mou): Computes the MAR using the horizontal and average vertical distances of mouth landmarks.
-
+<br>
 Constants
+<br>
 EYE_AR_THRESH: Threshold for detecting closed eyes.
+<br>
 EYE_AR_CONSEC_FRAMES: Number of consecutive frames needed to trigger a drowsiness alert.
+<br>
 MOU_AR_THRESH: Threshold for detecting yawning.
-
+<br>
 <h2>Outputs</h2>
 EAR and MAR Values:
 
