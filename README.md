@@ -1,7 +1,7 @@
-Drowsiness and Yawn Detection System
+<h1>Drowsiness and Yawn Detection System</h1>
 This project implements a real-time system for detecting drowsiness and yawning using computer vision and facial landmark detection. It uses the dlib library to identify facial landmarks and computes the Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR) to monitor a person's state.
 
-Features
+<h2>Features</h2>
 Drowsiness Detection:
 
 Detects when the eyes are closed for a prolonged period (based on EAR).
@@ -14,7 +14,7 @@ Real-Time Feedback:
 
 Provides visual cues on the screen, such as contours around the eyes and mouth.
 Displays EAR and MAR values dynamically on the video feed.
-How It Works
+<h2>How It Works</h2>
 Eye Aspect Ratio (EAR)
 The EAR is calculated using the Euclidean distance between vertical and horizontal eye landmarks. If the EAR drops below a threshold for a certain number of consecutive frames, it indicates that the eyes are closed, and the system triggers a drowsiness alert.
 
@@ -28,7 +28,7 @@ dlib: For face detection and landmark prediction.
 scipy.spatial.distance: For calculating Euclidean distances.
 cv2: For capturing and processing video.
 imutils: For frame resizing and helper functions.
-Functions:
+<h2>Functions:</h2>
 
 eye_aspect_ratio(eye): Computes the EAR using the vertical and horizontal distances of eye landmarks.
 mouth_aspect_ratio(mou): Computes the MAR using the horizontal and average vertical distances of mouth landmarks.
@@ -38,7 +38,7 @@ EYE_AR_THRESH: Threshold for detecting closed eyes.
 EYE_AR_CONSEC_FRAMES: Number of consecutive frames needed to trigger a drowsiness alert.
 MOU_AR_THRESH: Threshold for detecting yawning.
 
-Outputs
+<h2>Outputs</h2>
 EAR and MAR Values:
 
 Displayed in real-time on the video feed.
